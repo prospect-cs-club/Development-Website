@@ -1,0 +1,165 @@
+<!-- 
+    IMPLEMENT BEM NAMING CONVENTION
+
+    B: block (e.g. nav, header, footer, etc.)
+    E: element (e.g. child components like <li> tags)
+    M: modifications (e.g. different attributes like color or font size)
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Computer Science Club | PHS</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <section id="sidebar">
+			<div class="interior">
+				<nav>
+					<ul>
+						<li><a onclick="scrollToIntro()" id="introTab">Welcome</a></li>
+						<li><a onclick="scrollToAbout()" id="aboutTab">Who we are</a></li>
+						<li><a onclick="scrollToDo()" id="doTab">What we do</a></li>
+            <li><a onclick="scrollToPortfolio()" id="portfolioTab">What we have done</a></li>
+						<li><a onclick="scrollToContact()" id="contactTab">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+    <!-- Main Content -->
+    <div id="container">
+      <!-- Intro -->
+      <section id="intro">
+        <div class="interior">
+          <h1>Prospect Computer Science Club</h1>
+          <p>Explore the unlimited possibilities of computer science.</p>
+          <a href="#" class="button">Join Today!</a>
+        </div>
+      </section>
+
+      <!-- Who we are -->
+      <section id="about">
+        <div>
+          <h2>Who we are</h2>
+          <div class="outline">
+            <p>As one of the few clubs at Prospect High School that focuses on computer science and coding, we strive to provide our members with ample opportunities to explore the many branches of computer science (more than 30 branches!). We have meetings every Tuesday at lunch in Room 38. Click <a href="#">here</a><!-- alert/pop up that shows map of PHS where rm 38 is--> if you don't know where Room 38 is. We hope to see you soon!</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- What we do (projects, etc.) -->
+      <section id="do">
+        <div>
+          <h2>What we do</h2>
+          <div class="outline">
+            <p>Here at the Computer Science Club, you will have the opportunity to collaborate on a variety of projects with your peers, attend student or volunteer-led workshops organized by the club officers with topics ranging from machine learning to ???, and participate in competitions (for a prize!) every meeting.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Portfolio of completed/ongoing projects -->
+      <section id="portfolio">
+        <div>
+          <h2>What we have done</h2>
+          <p>Here are some of the projects and competitions the club has done and will do in the future.</p>
+
+          <!-- Show top 4 student projects to display -->
+          <div class="boxes">
+            <section id="box1">
+              <img src="https://via.placeholder.com/128">
+              <a href="#">Project 1</a>
+              <p>Project 1 desc</p>
+            </section>
+            <section id="box2">
+              <img src="https://via.placeholder.com/128">
+              <a href="#">Project 2</a>
+              <p>Project 2 desc</p>
+            </section>
+            <section id="box3">
+              <img src="https://via.placeholder.com/128">
+              <a href="#">Project 3</a>
+              <p>Project 3 desc</p>
+            </section>
+            <section id="box4">
+              <img src="https://via.placeholder.com/128">
+              <a href="#">Project 4</a>
+              <p>Project 4 desc</p>
+            </section>
+          </div>
+          <p id="learn-more">If you want to see more or learn what future projects we have in store, click the button below!</p>
+          <a href="#" class="button">Learn more</a>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section id="contact">
+
+        <!-- Email form for questions about club -->
+        <h2>Contact us</h2>
+        <p>If you have any questions regarding the club, please fill out and submit the form below. This will go to the club's email address.</p>
+        <div>
+          <section id="questions">
+            <form>
+              <div class="entries">
+                <div class="entry name">
+                  <label for="name">Full Name</label>
+									<input type="text" name="name" id="name"/>
+                </div>
+                <div class="entry email">
+                  <label for="email">Email Address</label>
+									<input type="text" name="email" id="email" />
+                </div>
+                <div class="entry textbox-large">
+                  <label for="message">Message</label>
+					  			<textarea name="message" id="message" rows="5"></textarea>
+                </div>
+              </div>
+              <div>
+                <a href="" class="button submit">Submit</a>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <!-- Footer (credits HTML5 UP for design inspirations) -->
+      <footer id="footer">
+        <div>
+          <ul>
+            <li>Design: Inspired from HTML5 UP's Hyperspace design.</li>
+            <li>"Google is your best friend."</li>
+          </ul>
+          <!-- Essential contact info -->
+          <section id="contact-info">
+            <ul>
+              <li>
+                <h3>Address</h3>
+                <span>18900 Prospect Road<br />
+                  Saratoga, CA 95070<br />
+                  USA</span>
+              </li>
+              <li>
+                <h3>Club Email Address</h3>
+                <a href="#" id="club-email">prospectcsclub@gmail.com</a>
+              </li>
+              <li>
+
+                <!-- Each social media has its own image icon instead of text appearing on website -->
+                <h3>Social Media</h3>
+                <ul class="socialMediaIcons">
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Github</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

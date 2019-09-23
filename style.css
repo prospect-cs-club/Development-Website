@@ -1,0 +1,459 @@
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.outline {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  display: flex;
+  font-size: 1.4em;
+  height: 50vh;
+  margin: 10% auto;
+  padding: 20px 70px;
+  width: 60vh;
+}
+
+body {
+  border: 0px solid black;
+}
+
+#container {
+  display: block;
+  margin-bottom: 0;
+  margin-left: 14em;
+  margin-right: 0;
+  margin-top: 0px;
+}
+
+#container > section {
+  display: block;
+  height: 100vh;
+  padding-left: 15px;
+}
+
+/* Intro */
+#container > #intro {
+  background-color:red;
+  padding-top: 30px;
+} 
+
+#intro > .interior {
+  padding-left: 30px;
+  padding-top: 30vh;
+}
+
+#intro > .interior h1 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+#intro > .interior p {
+  font-size: 1.2em;
+  padding-top: 15px;
+}
+
+#intro .button {
+  margin-top: 35px;
+}
+
+/* Who we are */
+#container > #about {
+  background-color: aquamarine;
+  height: 90vh;
+  padding: 50px;
+}
+
+#about > div {
+  display: block;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+#about h2 {
+  font-size: 2.5em;
+}
+
+#about p {
+  margin: auto;
+}
+
+/* What we do */
+#container > #do {
+  background-color: deepskyblue;
+  height: 90vh;
+  padding: 50px;
+}
+
+#do > div {
+  display: block;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+#do h2 {
+  font-size: 2.5em;
+}
+
+#do p {
+  margin: auto;
+}
+
+/* What we have done */
+#container > #portfolio {
+  background-color: rosybrown;
+  height: 150vh;
+  padding: 50px;
+}
+
+#portfolio > div {
+  display: block;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+#portfolio h2 {
+  font-size: 2.5em;
+}
+
+#portfolio > div > p {
+  display: block;
+  font-size: 1.1em;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#portfolio > div > .boxes {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  display: block;
+  margin-top: 40px;
+  padding: 25px;
+}
+
+#portfolio > div > .boxes > section {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  display: inline-block;
+  height: 300px;
+  margin: 15px;
+  text-align: center;
+  width: 40%;
+}
+
+.boxes > #box2,
+.boxes > #box4 {
+  float: right;
+}
+
+.boxes > section > img {
+  margin-top: 25px;
+}
+
+.boxes > section > a {
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: font-size 200ms ease;
+}
+
+.boxes > section a:visited {
+  color: black;
+}
+
+.boxes > section a:hover {
+  font-size: 1.7em;
+}
+
+.boxes > section > p {
+  font-size: 0.75em;
+  margin-top: 5px;
+}
+
+.boxes > section > p:before {
+  background-color: black;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  width: 80%; 
+}
+
+#portfolio #learn-more {
+  font-size: 1em;
+  margin-top: 50px;
+}
+
+#portfolio .button {
+  margin-top: 15px;
+}
+
+/* Contact */
+#container > #contact {
+  background-color: mediumpurple;
+  height: 80vh;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+}
+
+#contact > div {
+  margin-top: 30px;
+  max-height: 500px;
+}
+
+#contact > div > section {
+  display: inline-block;
+  margin-top: 0.5em;
+  max-height: 400px;
+}
+
+#contact > div > #questions {
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+}
+
+.entries > .entry {
+  display: inline-block;
+}
+
+.entries > .name {
+  width: calc(30%);
+}
+
+.entries > .email {
+  width: calc(70% - 10px);
+}
+
+.entries > .name > label,
+.entries > .email > label,
+.entries > .textbox-large > label {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.entries > .name > input,
+.entries > .email > input,
+.entries > .textbox-large > textarea {
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: block;
+  height: 24px;
+  padding-left: 5px;
+}
+
+.entries > .name > input {
+  width: calc(100% - 9px);
+}
+
+.entries > .email > input {
+  width: calc(100% - 9px);
+}
+
+.entries > .textbox-large {
+  display: block;
+  margin-top: 20px;
+}
+
+.entries > .textbox-large > textarea {
+  height: 200px;
+  width: calc(100% - 15px);
+}
+
+#questions .button {
+  margin-top: 15px;
+}
+
+/* Footer */
+#footer {
+  background: coral;
+  bottom: 0;
+  display: block;
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+
+#footer > div { 
+  height: 100%;
+}
+
+#footer > div > ul {
+  bottom: 10px;
+  display: inline-block;
+  font-size: 0.4em;
+  font-style: italic;
+  list-style: none;
+  padding-left: 50px;
+  padding-top: 25px;
+  position: absolute;
+}
+
+#footer > div > ul:before {
+  background-image: url("code_dinosaur.png");
+  background-size: contain;
+  border: 2px solid black;
+  content: '';
+  height: 130px;
+  position: absolute;
+  transform: translate(20px, -170px);
+  width: 190px;
+}
+
+#footer > div > ul > li {
+  margin-bottom: 5px;
+  transform: translateY(-10px);
+}
+
+#footer > div:before {
+  background-image: url("smart_dinosaur_docs.png");
+  background-size: contain;
+  border: 2px solid black;
+  content: '';
+  height: 130px;
+  position: absolute;
+  transform: translate(370px, 34px);
+  width: 140px;
+}
+
+#footer > div > #contact-info {
+  font-size: 0.75em;
+  float: right;
+  margin: 25px 0;
+  width: 25%;
+}
+
+#footer > div > #contact-info:before {
+  background: black;
+  content: '';
+  display: inline-block;
+  height: 195px;
+  position: absolute;
+  transform: translate(-20px, 0px);
+  width: 2px;
+} 
+
+#contact-info ul {
+  list-style: none;
+}
+
+#contact-info > ul > li {
+  margin-bottom: 10px;
+}
+
+#contact-info #club-email {
+  border-bottom: 1px dotted purple;
+  text-decoration: none;
+}
+
+/* Sidebar */
+#sidebar {
+  background-color: darkcyan;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 14em;
+  z-index: 42;
+}
+
+#sidebar > .interior {
+  padding: 25px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0 10px;
+  text-align: right;
+}
+
+#sidebar ul > li {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#sidebar ul > li > a {
+  border: 0;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-transition : all 200ms ease-out; 
+  -moz-transition : all 200ms ease-out;
+  -o-transition : all 200ms ease-out;
+}
+
+#sidebar ul > li > a:link,
+#sidebar ul > li > a:visited {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#sidebar ul > li > a:hover {
+  color: white;
+}
+
+#sidebar ul > li > a:before {
+  background-color: rgb(0, 99, 99);
+  content: '';
+  display: block;
+  height: 3px;
+  width: 154px;
+  transform: translateY(27px);
+  transition: width 300ms ease;
+}
+
+#sidebar ul > li > a:hover:before {
+  width: 0;
+}
+
+#sidebar ul > li > a:after {
+  background-image: linear-gradient(to right, cyan, red);
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 5px;
+  width: 154px;
+  transition: background-image 300ms ease;
+}
+
+/* Buttons */
+.button {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  color: white;
+  display: block;
+  width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition : all 300ms ease-out; 
+  -moz-transition : all 300ms ease-out;
+  -o-transition : all 300ms ease-out;
+}
+
+.button:visited {
+  color: white;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
